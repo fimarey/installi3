@@ -13,5 +13,10 @@ echo "exec i3" > ~/.xinitrc
 #Instalar rofi (mejor que dmenu)
 pacman -S --noconfirm rofi
 
-# Editores b�sicos
+# Editores básicos
 pacman -S --noconfirm nano neovim
+
+#internet
+
+nmcli dev wifi list
+nmcli device connect 'nombre de la red' password 'contraseña'
